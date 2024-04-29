@@ -6,7 +6,7 @@
 
 **DFA**
 
-<img height="600" src="C:\Users\cengci\Desktop\图片1.png" width="800"/>
+<img height="600" src="lexicalAnalyzer/src/main/resources/DFA.png" width="800"/>
 
 ## 语法分析器
 
