@@ -25,8 +25,7 @@ public class LexicalAnalyzer {
 
             listing.write(("C- Lexical Analyzer:" + "\n").getBytes());
             Scan scanner = new Scan(source, listing);
-            TokenType type = Scan.getToken();
-            while (Scan.getToken() != TokenType.ENDFILE);
+            while (scanner.getToken() != TokenType.ENDFILE);
             source.close(); // 关闭源码文件
             listing.close(); // 关闭目标文件
 
