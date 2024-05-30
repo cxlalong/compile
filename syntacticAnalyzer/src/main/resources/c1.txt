@@ -1,0 +1,134 @@
+Keyword:    	int
+program
+declaration
+Identifier:    	gcd
+Operator:    	(
+fun_declaration
+Keyword:    	int
+params
+param_list
+param
+Identifier:    	u
+Operator:    	,
+Keyword:    	int
+param
+Identifier:    	v
+Operator:    	)
+Operator:    	{
+compound-stmt
+Keyword:    	if
+local_declarations
+statement_list
+statement
+selection_stmt
+Operator:    	(
+Identifier:    	v
+expression
+var
+Operator:    	==
+simple_expression
+additive_expression
+term
+factor
+Number:    	0
+additive_expression
+term
+factor
+Operator:    	)
+Keyword:    	return
+statement
+return_stmt
+Identifier:    	u
+expression
+var
+Operator:    	;
+simple_expression
+additive_expression
+term
+factor
+Keyword:    	else
+Keyword:    	return
+statement
+return_stmt
+Identifier:    	gcd
+expression
+var
+Operator:    	(
+simple_expression
+additive_expression
+term
+factor
+call
+Identifier:    	v
+arg_list
+expression
+var
+Operator:    	,
+simple_expression
+additive_expression
+term
+factor
+Identifier:    	u
+expression
+var
+Operator:    	-
+simple_expression
+additive_expression
+term
+factor
+Identifier:    	u
+term
+factor
+var
+Operator:    	/
+Identifier:    	v
+factor
+var
+Operator:    	*
+Identifier:    	v
+factor
+var
+Operator:    	)
+Operator:    	;
+Operator:    	}
+----FINISH PARSING----
+<Program> (2)
+ <Declaration_list> (2)
+  <Declaration> (2)
+   <Fun_declaration> (2)
+    <Type_identifier : INT> (2)
+    <Identifier : gcd> (2)
+    <Param> (2)
+     <Type_identifier : INT> (2)
+     <Identifier : u> (2)
+    <Param> (2)
+     <Type_identifier : INT> (2)
+     <Identifier : v> (2)
+    <Compound_stmt> (3)
+     <Selection_stmt> (4)
+      <Operator : ==> (4)
+       <Var> (4)
+        <Identifier : v> (4)
+       <NUM : 0> (4)
+      <Return_stmt> (4)
+       <Var> (4)
+        <Identifier : u> (4)
+      <Return_stmt> (5)
+       <Call> (5)
+        <Var> (5)
+         <Identifier : gcd> (5)
+        <Args> (5)
+         <Var> (5)
+          <Identifier : v> (5)
+        <Args : ,> (5)
+         <Operator : -> (5)
+          <Var> (5)
+           <Identifier : u> (5)
+          <Operator : *> (5)
+           <Operator : /> (5)
+            <Var> (5)
+             <Identifier : u> (5)
+            <Var> (5)
+             <Identifier : v> (5)
+           <Var> (5)
+            <Identifier : v> (5)

@@ -1,0 +1,136 @@
+Keyword:    	void
+program
+declaration
+Identifier:    	main
+Operator:    	(
+fun_declaration
+Keyword:    	void
+params
+Operator:    	)
+Operator:    	{
+compound-stmt
+Keyword:    	int
+local_declarations
+var_declaration
+Identifier:    	x
+Operator:    	;
+Keyword:    	int
+var_declaration
+Identifier:    	y
+Operator:    	;
+Identifier:    	x
+statement_list
+statement
+expression_stmt
+expression
+var
+Operator:    	=
+Identifier:    	input
+expression
+var
+Operator:    	(
+simple_expression
+additive_expression
+term
+factor
+call
+Operator:    	)
+Operator:    	;
+Identifier:    	y
+statement
+expression_stmt
+expression
+var
+Operator:    	=
+Identifier:    	intput
+expression
+var
+Operator:    	(
+simple_expression
+additive_expression
+term
+factor
+call
+Operator:    	)
+Operator:    	;
+Identifier:    	output
+statement
+expression_stmt
+expression
+var
+Operator:    	(
+simple_expression
+additive_expression
+term
+factor
+call
+Identifier:    	gcd
+arg_list
+expression
+var
+Operator:    	(
+simple_expression
+additive_expression
+term
+factor
+call
+Identifier:    	x
+arg_list
+expression
+var
+Operator:    	,
+simple_expression
+additive_expression
+term
+factor
+Identifier:    	y
+expression
+var
+Operator:    	)
+simple_expression
+additive_expression
+term
+factor
+Operator:    	)
+Operator:    	;
+Operator:    	}
+----FINISH PARSING----
+<Program> (1)
+ <Declaration_list> (1)
+  <Declaration> (1)
+   <Fun_declaration> (1)
+    <Type_identifier : VOID> (1)
+    <Identifier : main> (1)
+    <Type_identifier : VOID> (1)
+    <Compound_stmt> (2)
+     <Var_declaration> (3)
+      <Type_identifier : INT> (3)
+     <Var_declaration> (3)
+      <Type_identifier : INT> (3)
+     <Assign: = > (4)
+      <Var> (4)
+       <Identifier : x> (4)
+      <Call> (4)
+       <Var> (4)
+        <Identifier : input> (4)
+       <Empty> (4)
+     <Assign: = > (5)
+      <Var> (5)
+       <Identifier : y> (5)
+      <Call> (5)
+       <Var> (5)
+        <Identifier : intput> (5)
+       <Empty> (5)
+     <Call> (6)
+      <Var> (6)
+       <Identifier : output> (6)
+      <Args> (6)
+       <Call> (6)
+        <Var> (6)
+         <Identifier : gcd> (6)
+        <Args> (6)
+         <Var> (6)
+          <Identifier : x> (6)
+        <Args : ,> (6)
+         <Var> (6)
+          <Identifier : y> (6)
